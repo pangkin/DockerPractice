@@ -1,0 +1,8 @@
+# $ docker run --name some-nginx \
+# -v /some/content:/usr/share/nginx/html:ro nginx
+services:
+  web:
+    # container_name: some-nginx
+    image: nginx
+    volumes:
+      - "/some/content:/usr/share/nginx/html:ro"
